@@ -60,11 +60,9 @@ export class IntegrationsService {
           basics: {
             name: `${get(profile, 'First Name')} ${get(profile, 'Last Name')}`,
             headline: get(profile, 'Headline'),
-            location: {
-              address: get(profile, 'Address'),
-              postalCode: get(profile, 'Zip Code'),
-            },
+            location: get(profile, 'Location'),
             summary: get(profile, 'Summary'),
+            
           },
         });
       } catch {
@@ -140,10 +138,7 @@ export class IntegrationsService {
                     name: get(position, 'Company Name'),
                     position: get(position, 'Title'),
                     summary: get(position, 'Description'),
-                    date: {
-                      start: this.parseDate(get(position, 'Started On')),
-                      end: this.parseDate(get(position, 'Finished On')),
-                    },
+                    date: get(position, 'Date'),
                   } as WorkExperience,
                 ],
               },
@@ -295,13 +290,8 @@ export class IntegrationsService {
             phone: get(jsonResume, 'basics.phone'),
             website: get(jsonResume, 'basics.url'),
             summary: get(jsonResume, 'basics.summary'),
-            location: {
-              address: get(jsonResume, 'basics.location.address'),
-              postalCode: get(jsonResume, 'basics.location.postalCode'),
-              city: get(jsonResume, 'basics.location.city'),
-              country: get(jsonResume, 'basics.location.countryCode'),
-              region: get(jsonResume, 'basics.location.region'),
-            },
+            location:  get(jsonResume, 'basics.location'),
+            genderNationality: get(jsonResume, 'genderNationality'),
           },
         });
       } catch {
@@ -345,10 +335,8 @@ export class IntegrationsService {
                     position: get(item, 'position'),
                     summary: get(item, 'summary'),
                     url: get(item, 'url'),
-                    date: {
-                      start: this.parseDate(get(item, 'startDate')),
-                      end: this.parseDate(get(item, 'endDate')),
-                    },
+                    date: get(item,'date'),
+                    about: get(item, 'about'),
                   } as WorkExperience,
                 ],
               },
@@ -651,11 +639,8 @@ export class IntegrationsService {
             phone: get(jsonResume, 'profile.phone'),
             website: get(jsonResume, 'profile.website'),
             summary: get(jsonResume, 'objective'),
-            location: {
-              address: get(jsonResume, 'profile.address.line1'),
-              postalCode: get(jsonResume, 'profile.address.pincode'),
-              city: get(jsonResume, 'profile.address.city'),
-            },
+            location: get(jsonResume, 'profile.location'),
+            genderNationality: get(jsonResume, 'genderNationality'),
           },
         });
       } catch {
@@ -698,11 +683,9 @@ export class IntegrationsService {
                     name: get(item, 'company'),
                     position: get(item, 'position'),
                     summary: get(item, 'summary'),
+                    about: get(item, 'about'),
                     url: get(item, 'website'),
-                    date: {
-                      start: this.parseDate(get(item, 'startDate')),
-                      end: this.parseDate(get(item, 'endDate')),
-                    },
+                    date: get(item, 'date'),
                   } as WorkExperience,
                 ],
               },

@@ -5,9 +5,10 @@ export type WorkExperience = {
   id?: string;
   name: string;
   position: string;
-  date?: DateRange;
+  date?: string;
   url?: string;
   summary?: string;
+  about?: string;
 };
 
 export type Education = {

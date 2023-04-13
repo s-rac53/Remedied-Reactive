@@ -20,13 +20,8 @@ const sampleData: Partial<Resume> = {
       'I am a creative frontend developer offering 4+ years of experience providing high-impact web solutions for diverse industry organizations. Skilled in designing, developing and testing multiple web-based applications incorporating a range of technologies. Aspiring to combine broad background with strong technical skills to excel as a frontend web developer.',
     website: 'alexisjones.com',
     headline: 'Highly Creative Frontend Web Developer',
-    location: {
-      city: 'Stuttgart',
-      region: 'Baden-Württemberg',
-      address: 'Ollenhauer Str. 51',
-      country: 'Germany',
-      postalCode: '70376',
-    },
+    location: 'Germany',
+    genderNationality: 'M and India',
     profiles: [
       {
         id: '4df61ffc-e48b-43f1-9434-add35d9cb155',
@@ -51,25 +46,24 @@ const sampleData: Partial<Resume> = {
         {
           id: 'fe280c61-9d92-4dba-8a08-274866470096',
           url: 'https://www.espritcam.com',
-          date: {
-            end: '',
-            start: '2015-09-01',
-          },
+          date: '2015/09/01-2017/06/24',
           name: 'DP Technology Corp.',
           summary:
             '- Manage website development projects from initial design through completion, optimizing all cross-browser and multi-platform compatibility.\n- Work closely with programmers and clients to meet project requirements, goals, and desired functionality.\n- Develop and integrate customized themes into WordPress, PHP-Fusion, and Concrete5.\nConduct training for clients on handling website content management systems.\n- Enable site-wide promotions by programming HTML5 canvases to animate particles on web backgrounds.',
+          about:
+          '- About About About About from initial design through completion, optimizing all cross-browser and multi-platform compatibility.\n- Work closely with programmers and clients to meet project requirements, goals, and desired functionality.\n- Develop and integrate customized themes into WordPress, PHP-Fusion, and Concrete5.\nConduct training for clients on handling website content management systems.\n- Enable site-wide promotions by programming HTML5 canvases to animate particles on web backgrounds.',
+              
           position: 'Frontend Developer, Stuttgart DE',
         },
         {
           id: '285d78f8-df56-4569-ba6b-cff5ebe5381e',
           url: 'https://www.vokophone.com',
-          date: {
-            end: '2015-07-31',
-            start: '2011-05-31',
-          },
+          date: '2015/07/31-2011/05/31',
           name: 'Voko Communications',
           summary:
             '- Developed websites from front to backend using PHP, JavaScript, and HTML.\n- Enhanced user experience and accomplish webpage objectives by creating site structure, navigation, page optimization, and graphics integration.\n- Implemented enhancements that improved web functionality and responsiveness.\n- Designed and maintained both corporate and client websites, using scripting languages and content management systems including WordPress.',
+            about:
+            '- About About About About from initial design through completion, optimizing all cross-browser and multi-platform compatibility.\n- Work closely with programmers and clients to meet project requirements, goals, and desired functionality.\n- Develop and integrate customized themes into WordPress, PHP-Fusion, and Concrete5.\nConduct training for clients on handling website content management systems.\n- Enable site-wide promotions by programming HTML5 canvases to animate particles on web backgrounds.',  
           position: 'Frontend Developer',
         },
       ],

@@ -25,13 +25,8 @@ const defaultState: Partial<Resume> = {
     phone: '',
     summary: '',
     website: '',
-    location: {
-      address: '',
-      city: '',
-      country: '',
-      region: '',
-      postalCode: '',
-    },
+    location: '',
+    genderNationality: '',
     profiles: [],
   },
   sections: {

@@ -51,8 +51,9 @@ const Section: React.FC<SectionProps> = ({
             phone: string = get(item, 'phone', ''),
             email: string = get(item, 'email', ''),
             summary: string = get(item, 'summary', ''),
+            about: string = get(item, 'about', ''),
             levelNum: number = get(item, 'levelNum', 0),
-            date = formatDateString(get(item, 'date', ''), dateFormat);
+            date: string = get(item, 'date', '');
 
           return (
             <div key={id} id={id} className="grid gap-1">
@@ -85,6 +86,8 @@ const Section: React.FC<SectionProps> = ({
               {date && <div className="opacity-50">({date})</div>}
 
               {summary && <Markdown>{summary}</Markdown>}
+
+              {about && <Markdown>{about}</Markdown>}
 
               {url && (
                 <div className="inline-flex justify-center">
