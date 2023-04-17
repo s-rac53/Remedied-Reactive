@@ -1,4 +1,4 @@
-import { DateRange } from './atoms';
+// import { DateRange } from './atoms';
 import { Profile } from './basics';
 
 export type WorkExperience = {
@@ -17,7 +17,7 @@ export type Education = {
   degree: string;
   area?: string;
   score?: string;
-  date?: DateRange;
+  date?: string;
   url?: string;
   summary?: string;
   courses?: string[];
@@ -45,7 +45,7 @@ export type Volunteer = {
   id?: string;
   organization: string;
   position: string;
-  date?: DateRange;
+  date?: string;
   url?: string;
   summary?: string;
 };
@@ -84,7 +84,7 @@ export type Project = {
   id?: string;
   name: string;
   description: string;
-  date?: DateRange;
+  date?: string;
   url?: string;
   summary?: string;
   keywords?: string[];
@@ -103,7 +103,7 @@ export type Custom = {
   id?: string;
   title: string;
   subtitle?: string;
-  date?: DateRange;
+  date?: string;
   url?: string;
   level?: string;
   levelNum?: number;

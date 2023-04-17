@@ -1,3 +1,4 @@
+import { string } from 'joi';
 import { Resume } from '../entities/resume.entity';
 
 const sampleData: Partial<Resume> = {
@@ -148,10 +149,7 @@ const sampleData: Partial<Resume> = {
         {
           name: 'Fintech News Inc.',
           description: 'Backend Developer',
-          date: {
-            start: '2020-01-01T17:14:14.000Z',
-            end: '2020-04-01T16:14:20.000Z',
-          },
+          date: '2015/09/01-2017/06/24',
           url: '',
           summary:
             '- Created a content management system serving as a client interface that reduced download times by 30%.\n- Developed new admin panel, which improved internal operating efficiency by over 40%.\n- Created comprehensive testing regime using RSpec to ensure bug-free code.\n- Rebuilt entire website with up to date technologies and frameworks.',
@@ -161,10 +159,7 @@ const sampleData: Partial<Resume> = {
         {
           name: 'Systron Solutions, San Francisco, CA',
           description: 'Inside Sales Associate',
-          date: {
-            start: '2020-01-01T17:14:14.000Z',
-            end: '2020-04-01T16:14:20.000Z',
-          },
+          date: '2015/09/01-2017/06/24',
           url: '',
           summary:
             '- Performed an average of 90+ cold calls daily creating three new qualified prospects exceeding company average by 10%.\n- Managed a $1 million pipeline that supported the creation of 50 new accounts.\n- Sold SaaS and Cloud offering to key accounts including California State University, Ace Athetics and BMI, succeeding in reducing back-up time by 50%.\n\n**Key Projects:** Worked with IT team to create a new web-based leads-generating system, resulting in closed sales increasing by 18% contributing to a $1.5 million increase in profits.',
@@ -184,10 +179,7 @@ const sampleData: Partial<Resume> = {
           id: '3f0eded8-ee1f-4c0e-b4a7-7a0811c150db',
           url: 'https://www.greenriver.edu',
           area: 'Computer Science',
-          date: {
-            end: '',
-            start: '2011-01-04T23:00:00.000Z',
-          },
+          date: '2015/09/01-2017/06/24',
           score: 'Honors: cum laude (GPA: 3.6/4.0)',
           degree: 'Bachelor of Science',
           courses: ['Data Structures and Algorithms', 'Logic Design'],
@@ -198,10 +190,7 @@ const sampleData: Partial<Resume> = {
           id: 'e4977e01-25bf-4524-95c4-20c77c3cf700',
           url: 'https://www.lsu.edu',
           area: 'English Literature',
-          date: {
-            end: '2010-12-31T23:00:00.000Z',
-            start: '2008-01-31T23:00:00.000Z',
-          },
+          date: '2015/09/01-2017/06/24',
           score: 'Baton Rouge, LA',
           degree: 'Bachelor of Arts',
           courses: ['Copywriting', 'Product Analysis'],
@@ -353,10 +342,7 @@ const sampleData: Partial<Resume> = {
         {
           id: 'bcd19f25-b015-4532-b555-dbcc6f556661',
           url: '',
-          date: {
-            end: '',
-            start: '',
-          },
+          date: '',
           level: '',
           title: 'Leadership',
           summary: '',
@@ -367,10 +353,7 @@ const sampleData: Partial<Resume> = {
         {
           id: 'e6fde8df-dcc8-4481-b872-2c298e7a3bbf',
           url: '',
-          date: {
-            end: '',
-            start: '',
-          },
+          date: '',
           level: '',
           title: 'Creativity',
           summary: '',
@@ -381,10 +364,7 @@ const sampleData: Partial<Resume> = {
         {
           id: '888db537-bed2-4d4d-901b-2c7f905f0464',
           url: '',
-          date: {
-            end: '',
-            start: '',
-          },
+          date: '',
           level: '',
           title: 'Problem Solving',
           summary: '',
@@ -395,10 +375,7 @@ const sampleData: Partial<Resume> = {
         {
           id: '74b9984e-4f0f-4db3-bdc8-fddb647b8df8',
           url: '',
-          date: {
-            end: '',
-            start: '',
-          },
+          date: '',
           level: '',
           title: 'Organization Skills',
           summary: '',
@@ -418,7 +395,7 @@ const sampleData: Partial<Resume> = {
     },
     locale: 'en',
     date: {
-      format: 'MMMM DD, YYYY',
+      format: '',
     },
     theme: {
       text: '#000000',

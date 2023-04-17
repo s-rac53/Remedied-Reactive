@@ -28,10 +28,7 @@ const defaultState: FormData = {
   degree: '',
   area: '',
   score: '',
-  date: {
-    start: '',
-    end: '',
-  },
+  date: '',
   url: '',
   summary: '',
   courses: [],
@@ -43,10 +40,7 @@ const schema = Joi.object<FormData>().keys({
   degree: Joi.string().required(),
   area: Joi.string().allow(''),
   score: Joi.string().allow(''),
-  date: Joi.object().keys({
-    start: Joi.string().allow(''),
-    end: Joi.string().allow(''),
-  }),
+  date: Joi.string().allow(''),
   url: Joi.string().pattern(VALID_URL_REGEX, { name: 'valid URL' }).allow(''),
   summary: Joi.string().allow(''),
   courses: Joi.array().items(Joi.string().optional()),
@@ -163,53 +157,15 @@ const EducationModal: React.FC = () => {
         />
 
         <Controller
-          name="date.start"
+          name="date"
           control={control}
           render={({ field, fieldState }) => (
-            <DatePicker
-              openTo="year"
-              inputRef={field.ref}
-              label={t<string>('builder.common.form.start-date.label')}
-              value={dayjs(field.value)}
-              views={['year', 'month', 'day']}
-              slots={{
-                textField: (params) => (
-                  <TextField
-                    {...params}
-                    error={!!fieldState.error}
-                    helperText={fieldState.error?.message || params.inputProps?.placeholder}
-                  />
-                ),
-              }}
-              onChange={(date: dayjs.Dayjs | null) => {
-                date && dayjs(date).isValid() && field.onChange(dayjs(date).format('YYYY-MM-DD'));
-              }}
-            />
-          )}
-        />
-
-        <Controller
-          name="date.end"
-          control={control}
-          render={({ field, fieldState }) => (
-            <DatePicker
-              openTo="year"
-              inputRef={field.ref}
-              label={t<string>('builder.common.form.end-date.label')}
-              value={dayjs(field.value)}
-              views={['year', 'month', 'day']}
-              slots={{
-                textField: (params) => (
-                  <TextField
-                    {...params}
-                    error={!!fieldState.error}
-                    helperText={fieldState.error?.message || t<string>('builder.common.form.end-date.help-text')}
-                  />
-                ),
-              }}
-              onChange={(date: dayjs.Dayjs | null) => {
-                date && dayjs(date).isValid() && field.onChange(dayjs(date).format('YYYY-MM-DD'));
-              }}
+            <TextField
+              required
+              label={t<string>('builder.common.form.position.label')}
+              error={!!fieldState.error}
+              helperText={fieldState.error?.message}
+              {...field}
             />
           )}
         />

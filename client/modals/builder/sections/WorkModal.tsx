@@ -179,7 +179,7 @@ const WorkModal: React.FC = () => {
         />
 
 <Controller
-          name="summary"
+          name="about"
           control={control}
           render={({ field, fieldState }) => (
             <TextField
