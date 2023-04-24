@@ -23,6 +23,11 @@ export type Education = {
   courses?: string[];
 };
 
+export type Professional = {
+  id?: string;
+  summary: string;
+};
+
 export type Award = {
   id?: string;
   title: string;
@@ -115,6 +120,7 @@ export type ListItem =
   | Award
   | Certificate
   | Education
+  | Professional
   | Interest
   | Language
   | Profile
@@ -131,6 +137,7 @@ export type SectionType =
   | 'location'
   | 'profiles'
   | 'education'
+  | 'professional'
   | 'awards'
   | 'certifications'
   | 'publications'

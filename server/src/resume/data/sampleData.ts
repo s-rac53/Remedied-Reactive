@@ -71,6 +71,28 @@ const sampleData: Partial<Resume> = {
       columns: 1,
       visible: true,
     },
+    professional: {
+     
+      id: 'professional',
+      name: 'Professional Experience',
+      type: 'basic',
+      items: [
+        {
+          id: '886cadb0-c07d-5b35-0987-9073456c7ac0',
+          summary: '-Worked for HAL and NAL.\n-Did defence projects-Did resesrch in AI.\n -Worked for stock brokers.'
+
+        },
+        {
+          id: 'd3e4adb0-c67d-5f65-0227-0bg5456c7ac0',
+          summary: '-Worked for HAL and NAL.\n-Did defence projects-Did resesrch in AI.\n -Worked for stock brokers.'
+
+        }, 
+        
+      ],
+      columns: 1,
+      visible: true,
+
+    },
     awards: {
       id: 'awards',
       name: 'Awards',

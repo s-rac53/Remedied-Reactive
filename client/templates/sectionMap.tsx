@@ -23,6 +23,7 @@ const sectionMap = (Section: React.FC<SectionProps>): Record<string, JSX.Element
       keywordsPath="courses"
     />
   ),
+  professional: <Section key="professional" path="sections.professional" />,
   awards: <Section key="awards" path="sections.awards" titlePath="title" subtitlePath="awarder" />,
   certifications: (
     <Section key="certifications" path="sections.certifications" titlePath="name" subtitlePath="issuer" />

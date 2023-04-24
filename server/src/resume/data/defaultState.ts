@@ -46,6 +46,15 @@ const defaultState: Partial<Resume> = {
       visible: true,
       items: [],
     },
+    professional: {
+      id: 'professional',
+      name: 'Professional Training',
+      type: 'basic',
+      columns: 2,
+      visible: true,
+      items: [],
+
+    },
     awards: {
       id: 'awards',
       name: 'Awards',
@@ -138,7 +147,7 @@ const defaultState: Partial<Resume> = {
     },
     layout: [
       [
-        ['work', 'education', 'projects', 'volunteer', 'references'],
+        ['work', 'education', 'projects', 'volunteer', 'references','professional'],
         ['skills', 'interests', 'languages', 'awards', 'certifications', 'publications'],
       ],
     ],

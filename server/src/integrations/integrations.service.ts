@@ -3,6 +3,7 @@ import {
   Award,
   Certificate,
   Education,
+  Professional,
   Interest,
   Language,
   Project,
