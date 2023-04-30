@@ -18,9 +18,9 @@ const sectionMap = (Section: React.FC<SectionProps>): Record<string, JSX.Element
       key="education"
       path="sections.education"
       titlePath="institution"
-      subtitlePath={['degree', 'area']}
+      subtitlePath={['degree']}
       headlinePath="score"
-      keywordsPath="courses"
+      
     />
   ),
   awards: <Section key="awards" path="sections.awards" titlePath="title" subtitlePath="awarder" />,
@@ -28,9 +28,9 @@ const sectionMap = (Section: React.FC<SectionProps>): Record<string, JSX.Element
     <Section key="certifications" path="sections.certifications" titlePath="name" subtitlePath="issuer" />
   ),
   publications: <Section key="publications" path="sections.publications" titlePath="name" subtitlePath="publisher" />,
-  skills: <Section key="skills" path="sections.skills" titlePath="name" keywordsPath="keywords" />,
+  skills: <Section key="skills" path="sections.skills" titlePath="name" />,
   languages: <Section key="languages" path="sections.languages" titlePath="name" />,
-  interests: <Section key="interests" path="sections.interests" titlePath="name" keywordsPath="keywords" />,
+  interests: <Section key="interests" path="sections.interests" titlePath="name" />,
   projects: (
     <Section
       key="projects"

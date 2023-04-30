@@ -35,23 +35,23 @@ const Masthead = () => {
       </div>
 
       <div className="flex flex-wrap justify-center gap-3">
-        <DataDisplay icon={<Cake />}>{formatDateString(birthdate, dateFormat)}</DataDisplay>
+        <DataDisplay>{formatDateString(birthdate, dateFormat)}</DataDisplay>
 
-        <DataDisplay icon={<Email />} link={`mailto:${email}`}>
+        <DataDisplay link={`mailto:${email}`}>
           {email}
         </DataDisplay>
 
-        <DataDisplay icon={<Phone />} link={`tel:${phone}`}>
+        <DataDisplay link={`tel:${phone}`}>
           {phone}
         </DataDisplay>
 
-        <DataDisplay icon={<Public />} link={addHttp(website)}>
+        <DataDisplay link={addHttp(website)}>
           {website}
         </DataDisplay>
 
-        <DataDisplay icon={<Room />}>{location}</DataDisplay>
+        <DataDisplay ><b>{location}</b></DataDisplay>
 
-        <DataDisplay icon={<Room />}>{genderNationality}</DataDisplay> 
+        <DataDisplay ><b>{genderNationality}</b></DataDisplay> 
 
         {profiles.map(({ id, username, network, url }) => (
           <DataDisplay key={id} icon={getProfileIcon(network)} link={url && addHttp(url)}>

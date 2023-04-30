@@ -111,34 +111,11 @@ const sampleData: Partial<Resume> = {
       items: [
         {
           id: 'e27660b2-2b0f-48b0-9b04-3597f0282d06',
-          name: 'Frontend Web Development',
-          level: 'Expert',
-          keywords: ['ReactJS', 'HTML/CSS', 'jQuery', 'PHP'],
-          levelNum: 10,
+          name: 'Frontend Web Development, Backend Development, Adobe Creative Cloud, Content Management Systems, Kafka, Django, REST API',
         },
-        {
-          name: 'Backend Development',
-          level: 'Novice',
-          levelNum: 8,
-          keywords: ['NodeJS', 'Springboot', 'Python/Flask', 'Postman'],
-          id: '2f98e07e-21f7-4b40-81e3-4cf529d43339',
-        },
-        {
-          id: 'bf4253f2-7829-432c-a1d5-07446e7ae873',
-          name: 'Adobe Creative Cloud',
-          level: 'Novice',
-          keywords: ['Photoshop', 'Illustrator', 'InDesign', 'Fireworks'],
-          levelNum: 8,
-        },
-        {
-          id: '0b4a6206-7a2b-47a4-b71d-59c24ceee219',
-          name: 'Content Management Systems',
-          level: 'Intermediate',
-          keywords: ['Wordpress', 'Joomla', 'Mailchimp'],
-          levelNum: 6,
-        },
+
       ],
-      columns: 2,
+      columns: 1,
       visible: true,
     },
     projects: {
@@ -147,23 +124,16 @@ const sampleData: Partial<Resume> = {
       type: 'basic',
       items: [
         {
-          name: 'Fintech News Inc.',
-          description: 'Backend Developer',
-          date: '2015/09/01-2017/06/24',
-          url: '',
           summary:
-            '- Created a content management system serving as a client interface that reduced download times by 30%.\n- Developed new admin panel, which improved internal operating efficiency by over 40%.\n- Created comprehensive testing regime using RSpec to ensure bug-free code.\n- Rebuilt entire website with up to date technologies and frameworks.',
-          keywords: ['Python', 'PHP', 'Ruby', 'Javascript'],
+            '- Created a content management system serving as a client interface that reduced download times by 30%.\n- Developed new admin panel, which improved internal operating efficiency by over 40%.\n- Created comprehensive testing regime using RSpec to ensure bug-free code.\n- Rebuilt entire website with up to date technologies and frameworks.\n\n',
+          
           id: '8c12add5-605a-449f-a8a6-e7625c702e60',
         },
         {
-          name: 'Systron Solutions, San Francisco, CA',
-          description: 'Inside Sales Associate',
-          date: '2015/09/01-2017/06/24',
-          url: '',
+          
           summary:
-            '- Performed an average of 90+ cold calls daily creating three new qualified prospects exceeding company average by 10%.\n- Managed a $1 million pipeline that supported the creation of 50 new accounts.\n- Sold SaaS and Cloud offering to key accounts including California State University, Ace Athetics and BMI, succeeding in reducing back-up time by 50%.\n\n**Key Projects:** Worked with IT team to create a new web-based leads-generating system, resulting in closed sales increasing by 18% contributing to a $1.5 million increase in profits.',
-          keywords: ['Sales & Marketing', 'Chain Management'],
+            '- Performed an average of 90+ cold calls daily creating three new qualified prospects exceeding company average by 10%.\n- Managed a $1 million pipeline that supported the creation of 50 new accounts.\n- Sold SaaS and Cloud offering to key accounts including California State University, Ace Athetics and BMI, succeeding in reducing back-up time by 50%.\n\n**Key Projects:** Worked with IT team to create a new web-based leads-generating system, resulting in closed sales increasing by 18% contributing to a $1.5 million increase in profits.\n\n',
+          
           id: 'ec58bb49-a6b1-49ed-9ff6-860a44663ed7',
         },
       ],
@@ -178,23 +148,23 @@ const sampleData: Partial<Resume> = {
         {
           id: '3f0eded8-ee1f-4c0e-b4a7-7a0811c150db',
           url: 'https://www.greenriver.edu',
-          area: 'Computer Science',
+          dop: '11/23/2015',
           date: '2015/09/01-2017/06/24',
           score: 'Honors: cum laude (GPA: 3.6/4.0)',
           degree: 'Bachelor of Science',
-          courses: ['Data Structures and Algorithms', 'Logic Design'],
-          summary: '',
+          courses: 'Data Structures and Algorithms Logic Design',
+          summary: 'Good College',
           institution: 'Green River College',
         },
         {
           id: 'e4977e01-25bf-4524-95c4-20c77c3cf700',
           url: 'https://www.lsu.edu',
-          area: 'English Literature',
+          dop: '08/10/2017',
           date: '2015/09/01-2017/06/24',
           score: 'Baton Rouge, LA',
           degree: 'Bachelor of Arts',
-          courses: ['Copywriting', 'Product Analysis'],
-          summary: '',
+          courses: 'Copywriting Product Analysis',
+          summary: 'Nice college',
           institution: 'Louisiana State University',
         },
       ],
@@ -207,27 +177,11 @@ const sampleData: Partial<Resume> = {
       type: 'basic',
       items: [
         {
-          name: 'Video Games',
-          keywords: ['FIFA', 'Age of Empires'],
+          name: 'Video Games, Football, Mindfulness, Artificial Intelligence',
           id: 'ddebb0e1-0a49-4ca6-be8a-956f10f62307',
         },
-        {
-          name: 'Football',
-          keywords: ['Manchester United', 'Los Angeles Rams'],
-          id: '2df59b01-8dde-40d5-b3da-f5f5e698e8fa',
-        },
-        {
-          name: 'Mindfulness',
-          keywords: ['Yoga/Meditation', 'Hiking'],
-          id: 'dc1bb429-1baf-4a0c-80ba-4d7a24f66e52',
-        },
-        {
-          name: 'Artificial Intelligence',
-          keywords: ['Machine Learning', 'GPT-3'],
-          id: '9939e616-9f03-4ec0-bb8e-25183925c7fc',
-        },
       ],
-      columns: 2,
+      columns: 1,
       visible: true,
     },
     languages: {
@@ -238,13 +192,11 @@ const sampleData: Partial<Resume> = {
         {
           name: 'English',
           level: 'Native',
-          levelNum: 10,
           id: 'dd9eb2b8-2956-463b-b0b1-0ffef84f9fc2',
         },
         {
           name: 'German',
           level: 'B1 (Intermediate)',
-          levelNum: 6,
           id: '6cf99d85-4efc-4ff8-9a7f-e76abd2d2857',
         },
       ],

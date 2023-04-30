@@ -15,12 +15,12 @@ export type Education = {
   id?: string;
   institution: string;
   degree: string;
-  area?: string;
   score?: string;
   date?: string;
   url?: string;
   summary?: string;
-  courses?: string[];
+  courses?: string;
+  dop?: string;
 };
 
 export type Award = {
@@ -62,32 +62,24 @@ export type Publication = {
 export type Skill = {
   id?: string;
   name: string;
-  level?: string;
-  levelNum: number;
-  keywords?: string[];
+
 };
 
 export type Language = {
   id?: string;
   name: string;
   level: string;
-  levelNum: number;
 };
 
 export type Interest = {
   id?: string;
   name: string;
-  keywords?: string[];
+  
 };
 
 export type Project = {
   id?: string;
-  name: string;
-  description: string;
-  date?: string;
-  url?: string;
   summary?: string;
-  keywords?: string[];
 };
 
 export type Reference = {

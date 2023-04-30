@@ -53,7 +53,10 @@ const Section: React.FC<SectionProps> = ({
             summary: string = get(item, 'summary', ''),
             about: string = get(item, 'about', ''),
             levelNum: number = get(item, 'levelNum', 0),
+            courses: string = get(item, 'courses', ''),
+            dop: string = get(item, 'dop', ''),
             date: string = get(item, 'date', '');
+
 
           return (
             <div key={id} id={id} className="grid gap-1">
@@ -84,6 +87,8 @@ const Section: React.FC<SectionProps> = ({
               )}
 
               {date && <div className="opacity-50">({date})</div>}
+
+              {courses && <div className="inline-flex justify-center"> {courses} </div>}
 
               {summary && <Markdown>{summary}</Markdown>}
 
@@ -116,6 +121,9 @@ const Section: React.FC<SectionProps> = ({
                   )}
                 </div>
               )}
+              {dop && <div className="inline-flex justify-center"> {dop} </div>}
+
+
             </div>
           );
         })}
